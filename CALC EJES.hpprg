@@ -1,0 +1,252 @@
+%%HP: T(0)A(D)F(.);
+@ Argumentos:
+@ Autor:
+@ E-mail:
+@ VersiÛn:
+@ Creado con HPUserEdit 6
+
+%%HP: T(0)A(D)F(.);
+@ Argumentos:
+@ Autor:
+@ E-mail:
+@ VersiÛn:
+@ Creado con HPUserEdit 6
+
+DIR
+  CALCEJES
+
+´
+'E' PURGE
+CLLCD
+DO
+  'E' PURGE
+  "CRITERIO"
+  {{"vm+goodman" 1.}
+  {"vm+gerbert" 2.}
+  {"vm+soderberg" 3.}
+  {"vm+asme" 4.}{"salir" 5.}}
+  1
+  CHOOSE DROP 'E' STO
+
+  CASE'E==1'
+  THEN
+  'R' PURGE
+1. 'R' STO
+DO
+"V.M+GOODMAN"
+{
+"KO"
+"KOS"
+"SE"
+"SUT"
+"MA"
+"MM"
+"TA"
+"TM"
+"N"
+}
+3
+{ }
+{ }
+INFORM
+IF
+THEN
+OBJç DROP ç KO KOS SE SUT MA MM TA TM N
+    ´ " RESULTADOS " "
+    " 1 DISP "
+    " + "
+    " +'((((16*N)/á)*((1/(SE*10^6))*(4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2)+(1/(SUT*10^6))*(4*(KO*MM)^2+3*(KOS*TM)^2)^(1/2)))^(1/3))*10^3' çNUM "d=" çTAG mm  "
+    " + + SCROLL
+    '((((16*N)/á)*((1/(SE*10^6))*(4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2)+(1/(SUT*10^6))*(4*(KO*MM)^2+3*(KOS*TM)^2)^(1/2)))^(1/3))*10^3'çNUM 'd' STO
+
+"Ultimo resultado almacenado en la variable 'd' " MSGBOX
+
+"SALIR" { { "NO" 1. } { "SÕ" 2. } } 1. CHOOSE DROP 'R' STO
+
+
+ª
+
+ELSE
+2.'R' STO
+END
+UNTIL 'R==2.'
+END
+CLLCD
+  END
+  END
+
+  CASE 'E==2'
+        THEN
+'R' PURGE
+1. 'R' STO
+DO
+"V.M+GERBERT"
+{
+"KO"
+"KOS"
+"SE"
+"SUT"
+"MA"
+"MM"
+"TA"
+"TM"
+"N"
+}
+3
+{ }
+{ }
+INFORM
+IF
+THEN
+OBJç DROP ç KO KOS SE SUT MA MM TA TM N
+    ´ " RESULTADOS " "
+    " 1 DISP "
+    " + "
+    " +'(((8*N*((4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2)))/(á*(SE*10^6))*(1+(1+((2*((4*(KO*MM)^2+3*(KOS*TM)^2)^(1/2))*(SE*10^6))/(((4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2))*(SUT*10^6)))^2)^(1/2)))^(1/3))*10^3' çNUM "d=" çTAG mm  "
+    " + + SCROLL
+    '(((8*N*((4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2)))/(á*(SE*10^6))*(1+(1+((2*((4*(KO*MM)^2+3*(KOS*TM)^2)^(1/2))*(SE*10^6))/(((4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2))*(SUT*10^6)))^2)^(1/2)))^(1/3))*10^3'çNUM 'd' STO
+
+"Ultimo resultado almacenado en la variable 'd' " MSGBOX
+
+"SALIR" { { "NO" 1. } { "SÕ" 2. } } 1. CHOOSE DROP 'R' STO
+
+
+ª
+
+ELSE
+2.'R' STO
+END
+UNTIL 'R==2.'
+END
+CLLCD
+
+  END
+  END
+
+  CASE 'E==3'
+        THEN
+            'R' PURGE
+1. 'R' STO
+DO
+"V.M+SODERBERG"
+{
+"KO"
+"KOS"
+"SE"
+"SYT"
+"MA"
+"MM"
+"TA"
+"TM"
+"N"
+}
+3
+{ }
+{ }
+INFORM
+IF
+THEN
+OBJç DROP ç KO KOS SE SYT MA MM TA TM N
+    ´ " RESULTADOS " "
+    " 1 DISP "
+    " + "
+    " +'((((16*N)/á)*((1/(SE*10^6))*(4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2)+(1/(SYT*10^6))*(4*(KO*MM)^2+3*(KOS*TM)^2)^(1/2)))^(1/3))*10^3' çNUM "d=" çTAG mm  "
+    " + + SCROLL
+    '((((16*N)/á)*((1/(SE*10^6))*(4*(KO*MA)^2+3*(KOS*TA)^2)^(1/2)+(1/(SYT*10^6))*(4*(KO*MM)^2+3*(KOS*TM)^2)^(1/2)))^(1/3))*10^3'çNUM 'd' STO
+
+"Ultimo resultado almacenado en la variable 'd' " MSGBOX
+
+"SALIR" { { "NO" 1. } { "SÕ" 2. } } 1. CHOOSE DROP 'R' STO
+
+
+ª
+
+ELSE
+2.'R' STO
+END
+UNTIL 'R==2.'
+END
+CLLCD
+  END
+  END
+
+CASE 'E==4'
+THEN
+'R' PURGE
+1. 'R' STO
+DO
+"V.M+ASME"
+{
+"KO"
+"KOS"
+"SE"
+"SYT"
+"MA"
+"MM"
+"TA"
+"TM"
+"N"
+}
+3
+{ }
+{ }
+INFORM
+IF
+THEN
+OBJç DROP ç KO KOS SE SYT MA MM TA TM N
+    ´ " RESULTADOS " "
+    " 1 DISP "
+    " + "
+    " +'((((16*N)/á)*(4*((KO*MA)/(SE*10^6))^2+3*((KOS*TA)/(SE*10^6))^2+4*((KO*MM)/(SYT*10^6))^2+3*((KOS*TM)/(SYT*10^6))^2)^(1/2))^(1/3))*10^3' çNUM "d=" çTAG mm  "
+    " + + SCROLL
+    '((((16*N)/á)*(4*((KO*MA)/(SE*10^6))^2+3*((KOS*TA)/(SE*10^6))^2+4*((KO*MM)/(SYT*10^6))^2+3*((KOS*TM)/(SYT*10^6))^2)^(1/2))^(1/3))*10^3'çNUM 'd' STO
+
+"Ultimo resultado almacenado en la variable 'd' " MSGBOX
+
+"SALIR" { { "NO" 1. } { "SÕ" 2. } } 1. CHOOSE DROP 'R' STO
+
+
+ª
+
+ELSE
+2.'R' STO
+END
+UNTIL 'R==2.'
+END
+CLLCD
+
+
+END
+END
+
+
+
+
+UNTIL 'E==5'
+END
+'E' PURGE
+ª
+
+
+  $CONFIG
+    ´ 1002 ATTACH ª               @ ´ #integer ATTACH ª         @
+
+  $HIDDEN
+    { }                      @ { hidden identifiers ...  } @
+
+  $VISIBLE
+    { CALCEJES }                      @ { visible identifiers ... } @
+
+  $ROMID
+    1002                     @ #integer
+
+  $TITLE
+    "CALC EJES
+     Author:
+     Calc:
+     Version:"               @ "Library Title"             @
+END
+
+HOME 'dirTemp' PGDIR
+'dirTemp' STO
+dirTemp CRLIB
